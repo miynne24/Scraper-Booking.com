@@ -1,6 +1,6 @@
 # Booking.com Scraper
 
-This project involves scraping data from Booking.com. The scraper extracts the following eight attributes for each hotel listing:
+This project involves scraping data from Booking.com. The scraper extracts the following nine attributes for each hotel listing:
 
 - Hotel Name
 - Hotel Address
@@ -9,6 +9,7 @@ This project involves scraping data from Booking.com. The scraper extracts the f
 - Average Review Rating
 - Review Count
 - Lodging Type
+- Hotel Deals
 - URL
 
 ## Prerequisites

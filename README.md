@@ -1,7 +1,3 @@
-Here's a refined version of the README file content for your GitHub project, formatted in a more professional and structured manner:
-
----
-
 # Booking.com Scraper
 
 This project involves scraping data from Booking.com. The scraper extracts the following eight attributes for each hotel listing:
@@ -53,9 +49,3 @@ To execute the scraper, you have two options:
    ```
    python booking_scraper.py
    ```
-
-Ensure your script is configured correctly and that you have a stable internet connection to avoid timeouts and other connectivity issues.
-
----
-
-This format is clean and easy to follow, suitable for a GitHub project README file. It provides clear instructions on how to set up and run your application.

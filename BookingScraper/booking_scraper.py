@@ -7,7 +7,7 @@ def main():
 
         destination = 'Kuala+Lumpur'
         checkin_date='2024-06-21'
-        checkout_date='2024-06-23'
+        checkout_date='2024-06-22'
         lang='en'
 
         page_url=f'https://www.booking.com/searchresults.html?ss={destination}&ssne={destination}&ssne_untouched={destination}&label=gen173nr-1FCAEoggI46AdIM1gEaKEBiAEBmAExuAEXyAEM2AEB6AEB-AECiAIBqAIDuAKX68izBsACAdICJGMxM2Q0NjE0LWRhZDEtNDY3Ni1iOThjLTNkNGEzZGFlMjg2ZdgCBeACAQ&sid=f9d0ad33086a56b2cc3cfecfe9bd03c7&aid=304142&lang={lang}&sb=1&src_elem=sb&src=index&dest_id=&dest_type=city&checkin={checkin_date}&checkout={checkout_date}&group_adults=2&no_rooms=1&group_children=0'
@@ -22,7 +22,7 @@ def main():
             # Optional: Retry or handle the error in other ways (e.g., try a different page or close the browser)
 
         # Incremental scrolling to load content
-        scroll_step = 500
+        scroll_step = 700
         last_position = page.evaluate("window.scrollY")
         while True:
             page.evaluate(f"window.scrollBy(0, {scroll_step})")
@@ -45,7 +45,7 @@ def main():
             hotel_dict['avg review'] = hotel.locator('//div[@data-testid="review-score"]/div[2]/div[1]').inner_text()
             hotel_dict['reviews count'] = hotel.locator('//div[@data-testid="review-score"]/div[2]/div[2]').inner_text().split()[0]
             hotel_dict['lodgingtype'] = hotel.locator('//h4[@class="b290e5dfa6 cf1a0708d9"]').inner_text()
-            hotel_dict['url'] = hotel.locator('//a[@data-testid="availability-cta-btn"]').get_attribute('href')
+            hotel_dict['distancecity'] = hotel.locator('//span[@data-testid="distance"]').inner_text()
 
             # Extracting detailed deals information from the aria-label attribute
             deals_element = hotel.locator('//span[@data-testid="property-card-deal"]')

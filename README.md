@@ -9,6 +9,7 @@ This project involves scraping data from Booking.com. The scraper extracts the f
 - Average Review Rating
 - Review Count
 - Lodging Type
+- Hotel Distance from City
 - Hotel Deals
 - URL
 

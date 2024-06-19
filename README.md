@@ -49,3 +49,5 @@ To execute the scraper, you have two options:
    ```
    python booking_scraper.py
    ```
+
+   You can scrape the data on booking.com as much as you want, you just need to change the value for scroll_step and timeout. Happy Scraping :)
